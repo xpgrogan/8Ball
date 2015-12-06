@@ -6,12 +6,15 @@ public class BallGUI extends Canvas
 	public void paint(Graphics window)
 	{
 		String test = "Test Test Test";
+		String title = "Magic 8-Ball Power";
 		window.setColor(Color.BLACK);
 		window.fillOval(100, 100, 600, 600);
 		window.setColor(Color.WHITE);
 		window.fillOval(300, 300, 200, 200);
 		window.setColor(Color.BLACK);
 		window.drawString(test, 360, 400);
+		window.setColor(Color.MAGENTA);
+		window.drawString(title, 350, 200);
 	}
 	
 	public static void main(String[] args)
@@ -25,3 +28,4 @@ public class BallGUI extends Canvas
 		win.setVisible(true);
 	}
 }
+
